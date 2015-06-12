@@ -53,8 +53,8 @@ None. The report is created straight from the API data.
 http://scormi.net/faq/
 
 == Screenshots ==
-screenshot-1.jpg
-screenshot-2.jpg
+1. Report example
+2. Mobile view
 
 
 == Changelog ==
