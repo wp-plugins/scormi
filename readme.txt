@@ -1,22 +1,22 @@
 === Plugin Name ===
-Plugin Name: Scormi
+Plugin Name: Scormi for Google Analytics & Moz 
 Plugin URI: http://scormi.net
-Description: Scormi generates a daily Google Analytics and Moz report
-Tags: Google Analytics, Moz, Metrics, Analytics, SEO
+Description: Easily view your Google Analytics activity and Moz SEO information with an automatic, daily report.
+Tags: Google Analytics, Moz, StatCounter, Web Analytics, SEO, API, Page rank, website traffic.
 Author: Aleksey Korenkov & Dave Goodwin
-Contributors: Team Scormi
+Contributors: Aleksey Korenkov & Dave Goodwin
 Requires at least: 4.0
 Tested up to: 4.2.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Scormi creates a daily report from your Google Analytics and Moz information.
+Easily view your Google Analytics activity and Moz SEO information with an automatic, daily report.
 
 == Description ==
-Scormi creates an easy-to-read, daily report from your Google Analytics and Moz information. The report can be viewed in the WordPress admin and automatically emailed to you if you enable this option.
+Scormi (Score Me) creates an easy-to-read, daily report from your Google Analytics and Moz information. The report can be viewed in the WordPress admin and automatically emailed to you if you enable this option.
 
-The report summarizes basic web analytics information such as
+Includes
 
 * Number of Visitors & Unique Pageviews
 * Top pages information
@@ -53,9 +53,12 @@ None. The report is created straight from the API data.
 http://scormi.net/faq/
 
 == Screenshots ==
-1. Report example
-2. Mobile view
-
+1. WordPress admin version of Scormi report 
+2. Mobile email version of Scormi report
 
 == Changelog ==
-= 1.0 Plugin released. =
+
+Version 1.0 
+
+* Release Date 13 June 2015
+* Plugin released.
