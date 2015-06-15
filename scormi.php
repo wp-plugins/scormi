@@ -1,12 +1,12 @@
 <?php
 /*
-	Plugin Name: Scormi
+	Plugin Name: Scormi for Google Analytics & Moz
 	Plugin URI: http://www.scormi.net
-	Description: Generates daily Google Analytics and Moz analytics report
-	Tags: Analytics, metrics, Google Analytics, Moz
-	Author: Aleksey Korenkov, Dave Goodwin
-	Requires at least: WordPress 3.8
-	Tested up to: 4.1
+	Description: Generates daily Google Analytics and Moz SEO report
+	Tags: Google Analytics, Moz, SEO
+	Author: Aleksey Korenkov and Dave Goodwin
+	Requires at least: WordPress 4.0
+	Tested up to: 4.2.2
 	Version: 1.0
 	License: GPL v2 or later
 
