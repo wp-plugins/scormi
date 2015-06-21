@@ -30,25 +30,25 @@ class SettingsHtml extends SettingsBase{
 
 	protected function PrintOverview(){ ?>	
 		<h3>Overview</h3>
-		<p>Scormi creates a daily Google Analytics and Moz summary report via nightly API connection to those services. You must be using Google Analytics for Scormi to work. There is no special requirement for Moz as it’s publicly accessible information.</p>
+		<p>Scormi creates a daily Google Analytics and Moz report via nightly API connection to those services. <b>You must be using Google Analytics for Scormi to work.</b> There is no special requirement for Moz, which is publicly accessible information.</p>
 		<hr>
 		<h3>Setup</h3>
 	<?php }
 
 	protected function printGoogle(){
-		echo '<p>Get a Google Analytics access token for Scormi, copy it, then return to this page and paste it below.</p>';
+		echo '<p>Get a Google Analytics access token for Scormi by clicking Get Token below. Upon clicking, your Google login page will open in a new browser tab independent of Scormi. After logging in, Google will give you the access token on a new page. Click on the token, copy it, then return to this page and paste it below.</p>';
 		echo '<table border="0">';
 		if ( ! \Scormi\GoogleApiAccess::inst()->isAccessTokenActive() ){
-			printf('<tr><td><a href="%s" target="_blank">Get token</a></td></tr>', \Scormi\GoogleApiAccess::inst()->getAccessTokenUrl());
+			printf('<tr><td><a href="%s" target="_blank"><span style="font-size:14pt;font-weight:600;">Get Token</span></a></td></tr>', \Scormi\GoogleApiAccess::inst()->getAccessTokenUrl());
 
 			echo '<tr>';
-			echo '<td><label class="description" for="scormi_options[google_token]">Google Access Code: </label></td>';
-			echo '<td><input size="100" maxlength="255" name="scormi_options[google_token]"></td>';
+			echo '<td><label class="description" for="scormi_options[google_token]">Enter your token here: </label></td>';
+			echo '<td><input size="100" maxlength="125" name="scormi_options[google_token]"></td>';
 			echo '</tr>';
 		} else {
 			echo ( $this->scormi_options['google_profile_id'] )
-				? '<div class="notice">Site url found in Google Analytics properties</div>'
-				: '<div class="error">No site url in Google Analytics properties</div>';
+				? '<div class="notice">Success. This website was found in your Google Analytics properties.</div>'
+				: '<div class="error">The URL for this WordPress domain was not found in your Google Analytics properties</div>';
 		}
 		
 
@@ -67,7 +67,7 @@ class SettingsHtml extends SettingsBase{
 		<label for="send_daily_report">Send me a daily report</label>
 
 		<input type="radio" id="dontsend_daily_report" name="scormi_options[send_daily_report]" value="off" <?php echo $this->getOption('send_daily_report') != 'on' ? 'checked' : ''?>>
-		<label for="dontsend_daily_report">Don’t send me a daily report</label>
+		<label for="dontsend_daily_report">Do not send me a daily report</label>
 		<hr>
 	<?php }
 
