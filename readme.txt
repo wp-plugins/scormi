@@ -1,8 +1,8 @@
 === Plugin Name ===
-Plugin Name: Scormi for Google Analytics & Moz 
+Plugin Name: Scormi for Google Analytics & Moz
 Plugin URI: http://scormi.net
-Description: Scormi creates a one-page, daily web analytics report via API to Google Analytics and Moz. 
-Tags: Google Analytics, Moz, StatCounter, Web Analytics, SEO, API, Page rank, website traffic.
+Description: Scormi creates a concise, sharable, daily web analytics report from your Google Analytics and Moz info. 
+Tags: Google Analytics, Moz, StatCounter, Web Analytics, SEO, API, Page rank, Alexa.
 Author: Aleksey Korenkov, Dave Goodwin
 Contributors: Aleksey Korenkov, Dave Goodwin
 Requires at least: 4.0
@@ -11,28 +11,26 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Scormi creates a one-page, daily web analytics report via API to Google Analytics and Moz.
+Scormi creates a concise, sharable, daily web analytics report from your Google Analytics and Moz info.
 
 == Description ==
-Scormi creates a one-page, daily web analytics report via API to Google Analytics and Moz. The report can be automatically emailed to you or viewed in the WordPress admin. It's a time saver for SEOs, digital marketers, and WordPress web admins.
+A time saving automation tool for digital marketers, Scormi creates a daily web analytics report for your site via Google Analytics and Mozscape APIs. Set the report to be automatically emailed to you or view it in the WordPress admin any time. 
 
-Includes
+Includes Weekly
 
 * Visitors & Unique Pageviews
-* Top 10 Landing pages, Users, pageviews, new vs returning, bounce rate
-* Visitor locations
-* Desktop, Tablet, Mobile percentages
-* Top countries
+* Top 10 Landing pages with associated Users, Pageviews, New vs Returning, & Bounce rate
+* Visitor Desktop, Tablet, Mobile breakdown
+* Top 3 countries
 * Traffic sources: Organic, Direct, Referral, Social
-* Your site’s MozRank, Domain Authority, and the number of equity links to your site.
-* Optional, automatic report emailing
+* Your site’s MozRank, Domain Authority, and the number of equity links (back links) to your site.
 
 == Installation ==
 To install and configure Scormi
 
-1. Install and activate the plugin.
-1. Click on Scormi>Settings from the WordPress Admin menu and complete the setup.
-1. Click Scormi>Scormi from the WordPress Admin menu to generate the report.
+1. Install the plugin by uploading or via the automatic WordPress installer, then activate the plugin.
+1. Click on Scormi>Settings in the WP Admin menu on the left or under Installed Plugins and complete the settings info.
+1. Click Scormi>Scormi from the WordPress Admin menu on the left to generate the report.
 
 == Frequently Asked Questions ==
 = Can Scormi see my Google credentials? =
@@ -42,7 +40,7 @@ No. You sign into Google using their OAuth 2 secure login and Google Analytics g
 Mozscape information is publicly available; no user credentials or setup is required.
 
 = How much of my Google Analytics info does Scormi retain for its own use? =
-None. The report is created straight from the API data.
+None. We do not use a database to create the report. It is created directly from API calls.
 
 = Addition FAQs =
 http://scormi.net/faq/
