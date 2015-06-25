@@ -1,41 +1,36 @@
 === Plugin Name ===
 Plugin Name: Scormi for Google Analytics & Moz 
 Plugin URI: http://scormi.net
-Description: Easily view your Google Analytics activity and Moz SEO information with an automatic, daily report.
+Description: Scormi creates a one-page, daily web analytics report via API to Google Analytics and Moz. 
 Tags: Google Analytics, Moz, StatCounter, Web Analytics, SEO, API, Page rank, website traffic.
-Author: Aleksey Korenkov & Dave Goodwin
-Contributors: Aleksey Korenkov & Dave Goodwin
+Author: Aleksey Korenkov, Dave Goodwin
+Contributors: Aleksey Korenkov, Dave Goodwin
 Requires at least: 4.0
 Tested up to: 4.2.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily view your Google Analytics activity and Moz SEO information with an automatic, daily report.
+Scormi creates a one-page, daily web analytics report via API to Google Analytics and Moz.
 
 == Description ==
-Scormi (Score Me) creates an easy-to-read, daily report from your Google Analytics and Moz information. The report can be viewed in the WordPress admin and automatically emailed to you if you enable this option.
+Scormi creates a one-page, daily web analytics report via API to Google Analytics and Moz. The report can be automatically emailed to you or viewed in the WordPress admin. It's a time saver for SEOs, digital marketers, and WordPress web admins.
 
 Includes
 
-* Number of Visitors & Unique Pageviews
-* Top pages information
-* Visitor locations and devices
-* Traffic sources
+* Visitors & Unique Pageviews
+* Top 10 Landing pages, Users, pageviews, new vs returning, bounce rate
+* Visitor locations
+* Desktop, Tablet, Mobile percentages
+* Top countries
+* Traffic sources: Organic, Direct, Referral, Social
 * Your site’s MozRank, Domain Authority, and the number of equity links to your site.
-
-= How it works =
-1. Once per night the plugin requests your Google Analytics and Moz information from the Scormi server.
-1. The server fetches the information via API and sends it to the plugin to be rendered into an HTML report.
-1. The report is viewable in the WordPress admin and can be optionally emailed to the email address in Settings>General.
-
-= Additional Info =
-The plugin uses WordPress Cron, which fires only on a page visit. If there are no site visitors on a given day then the report will not run that day.
+* Optional, automatic report emailing
 
 == Installation ==
-This section describes how to install the plugin and get it working.
+To install and configure Scormi
 
-1. Install and activate the plugin from your WordPress Admin via the automated WordPress process.
+1. Install and activate the plugin.
 1. Click on Scormi>Settings from the WordPress Admin menu and complete the setup.
 1. Click Scormi>Scormi from the WordPress Admin menu to generate the report.
 
@@ -44,7 +39,7 @@ This section describes how to install the plugin and get it working.
 No. You sign into Google using their OAuth 2 secure login and Google Analytics gives you an access token for Scormi to use.
 
 = I don’t have a Moz account, how does that work? =
-The Moz information on the report comes from publicly accessible “Mozscape” information and no user credentials or setup is required.
+Mozscape information is publicly available; no user credentials or setup is required.
 
 = How much of my Google Analytics info does Scormi retain for its own use? =
 None. The report is created straight from the API data.
