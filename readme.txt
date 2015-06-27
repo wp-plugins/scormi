@@ -15,33 +15,34 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Automatically creates a daily, sharable web analytics report from your Google Analytics and Moz info.
 
 == Description ==
-A time saving automation tool for digital marketers, Scormi creates a daily web analytics report for your site via Google Analytics and Mozscape APIs. Set the report to be automatically emailed to you or view it in the WordPress admin any time. 
+A time saving automation tool for digital marketers, Scormi creates a daily, sharable web analytics report from your Google Analytics and Moz information. The plugin uses APIs to connect to Google Analytics and Moz, then generates an HTML report that can be automatically emailed to you or can be viewed in the WordPress admin at any time.
 
-Includes
+The report contains Google Analytics information for the prior 7 days and Mozscape information from the current update including:
 
-* Visitors & Unique Pageviews
+* Visitors & Unique Pageviews 
 * Top 10 Landing pages with associated Users, Pageviews, New vs Returning, & Bounce rate
-* Visitor Desktop, Tablet, Mobile breakdown
-* Top 3 countries
+* Desktop, Tablet, Mobile breakdown
+* Visitor Top 3 countries
 * Traffic sources: Organic, Direct, Referral, Social
 * Your site’s MozRank, Domain Authority, and the number of equity links (back links) to your site.
 
 == Installation ==
 To install and configure Scormi
 
-1. Install the plugin by uploading it directly or via the automatic WordPress installer, then activate the plugin.
+1. Ensure that you have previously installed the Google Analytics tracking code.
+1. Install the plugin by uploading it directly or via the automatic WordPress installer, then activate it.
 1. Click on Scormi>Settings in the WP Admin menu on the left or under Installed Plugins and complete the settings info.
 1. Click Scormi>Scormi from the WordPress Admin menu on the left to generate the report.
 
 = How it Works =
-The plugin requests your Google Analytics and Moz information once per night via API to these services. It then renders an HTML report  that can be set to auto-email to you and/or is always viewable in the WordPress admin. The report provides a high-level snapshot and is fully automatic; there are no user settings to configure.
+The plugin requests your Google Analytics and Moz information once per night via API to these services. It then renders an HTML report  that can be set to auto-email to you and/or is always viewable in the WordPress admin. The report provides a high-level snapshot and is fully automatic; there are no user settings to configure. The report is cached in WordPress between updates for quick loading.
 
 == Frequently Asked Questions ==
 = Can Scormi see my Google credentials? =
 No. You sign into Google using their OAuth 2 secure login and Google Analytics gives you an access token for Scormi to use.
 
-= I don’t have a Moz account, how does that work? =
-Mozscape information is publicly available; no user credentials or setup is required.
+= What is Moz(scape)? =
+Moz is a company that collects and provides website and web page popularity information--an "SEO footprint." Mozscape is their database of this information, which is publicly available; no user credentials or setup is required. The information on the Scormi report is helpful in tracking your SEO strength.
 
 = How much of my Google Analytics info does Scormi retain for its own use? =
 None. We do not use a database to create the report. It is created directly from API calls.
