@@ -1,8 +1,8 @@
 === Plugin Name ===
 Plugin Name: Scormi for Google Analytics & Moz
 Plugin URI: http://scormi.net
-Description: Automatically creates a daily, sharable web analytics report from your Google Analytics and Moz info.
-Tags: Google Analytics, Moz, StatCounter, Web Analytics, SEO, Mozscape, MozTrust, Domain Authority, API, Page rank, Alexa, Analytics Report, tools, automation, keywords, meta keywords, webmaster tools, google webmaster tools, seo pack, most popular pages, referrer spam, geo location.
+Description: Your top Google Analytics metrics and Moz SEO footprint every day, automatically.
+Tags: Google Analytics, Moz, StatCounter, Web Analytics, SEO, Mozscape, MozTrust, Domain Authority, API, Page rank, Alexa, Analytics Report, SEO pack, most popular pages, referrer spam.
 Author: Aleksey Korenkov, Dave Goodwin
 Author URI: http://scormi.net
 Contributors: Alex, Dave
@@ -12,7 +12,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Automatically creates a daily, sharable web analytics report from your Google Analytics and Moz info.
+Your top Google Analytics metrics and Moz SEO footprint every day, automatically.
 
 == Description ==
 A time saving automation tool for digital marketers, Scormi creates a daily, sharable web analytics report from your Google Analytics and Moz information. The plugin uses APIs to connect to Google Analytics and Moz, then generates an HTML report that can be automatically emailed to you or can be viewed in the WordPress admin at any time.
