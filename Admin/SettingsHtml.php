@@ -12,6 +12,7 @@ class SettingsHtml extends SettingsBase{
 			settings_fields('scormi_plugin_options');
 
 			$this->printGoogle();
+			$this->printReportPeriod();
 			$this->printDailyReport();
 			$this->printSendToScormi();
 			echo '<h3>Timezone</h3>';
@@ -58,6 +59,22 @@ class SettingsHtml extends SettingsBase{
 		}
 		echo '</td></tr></table><hr>';
 	}
+
+	protected function printReportPeriod(){ ?>
+		<h3>Report period.</h3>
+		<p>Please choose the report date range.</p>
+		
+
+		<select id="report_period" name="scormi_options[report_period]">
+		<?php 
+			foreach (array(7, 30, 60, 90) as $period) 
+				printf('<option value="%s" %s>%s</option>', $period, $this->getOption('report_period') == $period ? 'selected="selected"' : '', $period);
+		?>
+		</select>
+		<label for="report_peroid">Report period</label>
+		<hr>
+	<?php }
+
 
 	protected function printDailyReport(){ ?>
 		<h3>Optional Daily Email Report.</h3>

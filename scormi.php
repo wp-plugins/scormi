@@ -7,7 +7,7 @@
 	Author: Aleksey Korenkov, Dave Goodwin
 	Requires at least: WordPress 4.0
 	Tested up to: 4.2.2
-	Version: 1.0
+	Version: 2.0
 	License: GPL v2 or later
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.
@@ -26,7 +26,7 @@ if ( !function_exists( 'add_action' ) ) {
 
 
 class Scormi{
-	const VERSION = 1.0;
+	const VERSION = 2.0;
 
 	public function __construct(){
 		add_action('init',		array($this, 'ScormiStartSession'), 1);

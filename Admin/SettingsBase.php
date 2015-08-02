@@ -29,8 +29,7 @@ abstract class SettingsBase {
 			}
 		}
 
-
-		foreach (array('send_daily_report', 'agree_to_scormi_net') as $fieldname){
+		foreach (array('send_daily_report', 'agree_to_scormi_net', 'report_period') as $fieldname){
 			if ( isset($_POST['scormi_options'][$fieldname]) )
 				$options[$fieldname] = wp_filter_nohtml_kses($_POST['scormi_options'][$fieldname]);
 		}

@@ -9,6 +9,8 @@ class Report {
 			throw new \Scormi\Exception('No google profile id, please check settings page');
 
 		return array(
+			'ReportPeriod'		=> $options['report_period'],
+			'SendDailyReport'	=> $options['send_daily_report'],
 			'APIs' => array( 
 				'google'	=> array(
 					'url'	=> get_option('siteurl'),
@@ -19,7 +21,10 @@ class Report {
 	}
 
 	public function getAsArray(){
-		if ( ($cached = get_transient('scormi_report_cache')) !== false ){
+		$requestData 	= $this->prepareData();
+		$reportPeriod	= $requestData['ReportPeriod'];
+
+		if ( ($cached = get_transient('scormi_report_cache.'.$reportPeriod)) !== false ){
 			$cached = json_decode($cached, true);
 			if ( $cached && isset($cached['version']) && $cached['version'] == \Scormi\Scormi::VERSION )
 				return $cached;
@@ -28,7 +33,7 @@ class Report {
 		for ($it=0; ; $it++){
 			$res		= wp_remote_post('http://app.scormi.net/reports/generateByApis.json', array(
 				'method'	=> 'POST',
-				'body'		=> $this->prepareData(),
+				'body'		=> $requestData,
 				'timeout'	=> 15,
 			));
 
@@ -70,7 +75,7 @@ class Report {
 		$end=\Scormi\Scormi::getLocalTime();
 		$end->setTime(23,59);
 
-		set_transient('scormi_report_cache', $theBody, $end->getTimeStamp() - $now->getTimeStamp());
+		set_transient('scormi_report_cache.'.$reportPeriod, $theBody, $end->getTimeStamp() - $now->getTimeStamp());
 
 		return $data;
 	}
