@@ -30,9 +30,6 @@ class SettingsHtml extends SettingsBase{
 	}
 
 	protected function PrintOverview(){ ?>	
-		<h3>Overview</h3>
-		<p>Scormi creates a daily Google Analytics and Moz report via nightly API connection to those services. <b>You must be using Google Analytics for Scormi to work.</b> There is no special requirement for Moz, which is publicly accessible information.</p>
-		<hr>
 		<h3>Setup</h3>
 	<?php }
 
@@ -90,7 +87,7 @@ class SettingsHtml extends SettingsBase{
 
 	protected function printSendToScormi(){ ?>
 		<h3>Permission</h3>
-		<p>The plugin sends your Google Analytics token to the Scormi server each night for API access. Scormi does not retain or analyze any of your Google Analytics data.</p>
+		<p>The plugin sends your Google Analytics token to the Scormi server each night for API access. </p>
 
 
 		<input type="checkbox" id="agreeToScormiNet" name="scormi_options[agree_to_scormi_net]" value="agree" <?php echo $this->getOption('agree_to_scormi_net') == 'agree' ? 'checked' : ''?>>

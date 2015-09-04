@@ -37,6 +37,7 @@ class Admin {
 		try {
 			$report	= new \Scormi\Report();
 			$data = $report->getAsArray();
+			\Scormi\Scormi::loadBootstrap();
 
 			if ( isset($data['images']) ){
 				foreach( $data['images'] as $imgData ){

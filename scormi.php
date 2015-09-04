@@ -1,13 +1,14 @@
 <?php
 /*
-	Plugin Name: Scormi for Google Analytics & Moz
+	Plugin Name: Scormi - Google Analytics Insights
 	Plugin URI: http://www.scormi.net
-	Description: Generates daily Google Analytics and Moz SEO report
-	Tags: Google Analytics, Moz, SEO, API
+	Description: Mobile friendly Google Analytics insights.
+	Tags: Google Analytics, Digital Marketing Analytics
 	Author: Aleksey Korenkov, Dave Goodwin
+	Author URI: http://www.scormi.net
 	Requires at least: WordPress 4.0
-	Tested up to: 4.2.2
-	Version: 2.0
+	Tested up to: 4.3
+	Version: 3.0
 	License: GPL v2 or later
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.
