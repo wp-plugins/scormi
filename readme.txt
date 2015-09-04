@@ -48,8 +48,9 @@ No. You sign into Google using their OAuth 2 secure login and Google Analytics g
 Yes but Google Analytics information with a small data set (100 per day being borderline) will result reporting gaps for some report items such as Page Load Time. This is due to GA’s use of data sampling for some metrics.
 
 == Screenshots ==
-
-
+1. The Scormi report is fully responsive and looks great on mobile devices. This is a screenshot of the lower portion of the report on an iPhone 5.
+2. The report in the WordPress admin. The phone does not appear in the real admin of course.
+ 
 == Changelog ==
 
 Version 3.0 - Release Date 3 Sept 2015
