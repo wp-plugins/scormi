@@ -8,7 +8,7 @@
     Author URI: http://www.scormi.net
     Requires at least: WordPress 4.0
     Tested up to: 4.3
-    Version: 3.0
+    Version: 3.0.1
     License: GPL v2 or later
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 2, as published by the Free Software Foundation.

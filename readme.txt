@@ -60,6 +60,10 @@ Yes but Google Analytics information with a small data set (100 per day being bo
  
 == Changelog ==
 
+Version 3.0.1 - Release Date 5 Sep 2015
+
+* Added shortcode use instructions to settings page
+
 Version 3.0 - Release Date 3 Sep 2015
 
 * Introduced responsive CSS analytics report

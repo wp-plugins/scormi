@@ -15,8 +15,8 @@ class SettingsHtml extends SettingsBase{
 			$this->printReportPeriod();
 			$this->printDailyReport();
 			$this->printSendToScormi();
-			echo '<h3>Shortcode Setup</H3>';
-			echo '<p>1. Use the shortcode to allow access to the report on a publicly accessible page. Simply add [scormi] to a newly created page, write a name in the title space so it becomes your report URL (example.com/stats/), password protect the page to keep it invisible to search engines and unauthorized passersby, select full width layout, then save it. Be careful. If you set the page visibility to Private or Public can be found by search engines and others. </p>';
+			echo '<h3>Shortcode Setup</h3>';
+			echo '<p>Use the shortcode to display the report on a publicly accessible page. Simply add [scormi] to a newly created page, write a name in the title space so it becomes your report URL (example.com/stats/), password protect the page to keep it invisible to search engines and unauthorized passersby, select full width layout, then save it. Be careful. If you set the WP page visibility to Private or Public it can be found by search engines and others. </p>';
 			echo '<h3>Timezone</h3>';
 			echo '<p>Finally, be sure the timezone in Settings>General has been set to your local time. This ensures that your report data reflects the 24 hours of your time zone (as opposed to the default GMT/UTC).</p>';
 			$this->printSaveButton();
