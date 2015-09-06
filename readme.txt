@@ -17,6 +17,8 @@ Mobile friendly Google Analytics insights.
 == Description ==
 Our goal with the plugin is to give you actionable information that can be used to make business decisions. Using the acquisition information below gives you a good picture of where visitors are coming from and how well your content is performing. Choose report date ranges for the past 7, 30, 60, or 90 days. Scormi works best for mature sites with over 100 visitors/day and at least 90 days of Google Analytics history. The report is mobile responsive so it works perfectly on a smartphone.
 
+The report can be viewed in the WP admin and one a publicly accessible WordPress page you create. You can optionally have the report auto-emailed to you daily.  
+
 Report metrics include:
 
 * Sessions & corresponding last year sessions
@@ -36,13 +38,18 @@ To install and configure Scormi
 1. Click on Scormi>Settings in the WP Admin menu on the left or under Installed Plugins and complete the settings info.
 1. Select your desired report date range, from 7 to 90 days.
 1. Click Scormi>Scormi in the WordPress Admin menu on the left to generate the report.
+1. Shortcode instructions are in Scormi>Settings.
+
 
 = How it Works =
-The plugin requests your Google Analytics information once per night via API, then renders an HTML report. The report is cached in WordPress between updates for quick loading.
+The plugin requests your Google Analytics information once per night. The request is sent to our server, which connects to GA via API, gathers the info, and returns it to the plugin. The plugin then renders the HTML report. The report is cached in WordPress between updates for quick loading.
 
 == Frequently Asked Questions ==
 = Can Scormi see my Google credentials? =
 No. You sign into Google using their OAuth 2 secure login and Google Analytics gives you an access token for Scormi to use.
+
+= The report doesn’t look right on a smartphone. = 
+The report uses Bootstrap 3 and has been built to work correctly with the standard WordPress theme. Using a 3rd party theme that is not mobile responsive or has CSS idiosyncrasies can cause formatting issues on small screens.
 
 = Can I use the plugin if my site has fewer than 100 sessions/day and less than one year of GA history? =
 Yes but Google Analytics information with a small data set (100 per day being borderline) will result reporting gaps for some report items such as Page Load Time. This is due to GA’s use of data sampling for some metrics.
@@ -53,7 +60,7 @@ Yes but Google Analytics information with a small data set (100 per day being bo
  
 == Changelog ==
 
-Version 3.0 - Release Date 3 Sept 2015
+Version 3.0 - Release Date 3 Sep 2015
 
 * Introduced responsive CSS analytics report
 * Revised Google Analytics metrics and dimensions
