@@ -15,7 +15,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Scores your blog post engagement strength.
 
 == Description ==
-Scormi uses your Google Analytics data and some math to calculate a blog post quality score. Knowing this can help you shape your content for better user engagement. On the mobile responsive report you'll instantly see which of your top 10 posts score at visitor engagement relative to the group. Scormi also reports Google Analytics metrics applicable to your site in general.
+Scormi uses your Google Analytics data and some math to calculate your blog post engagement strength. Knowing this can help you shape your content for better user engagement. Engagement strength is presented in a scorecard-like green, amber, red display. On the mobile responsive report you'll instantly see how well your top 10 posts score at visitor engagement relative to the group. Scormi also reports Google Analytics metrics applicable to your site in general.
 
 Use a shortcode to view the report on a publicly accessible (protected) WordPress page or view it in the WP admin. 
 
@@ -55,7 +55,7 @@ No. You sign into Google using their OAuth 2 secure login and Google Analytics g
 The report uses Bootstrap 3 and has been built to work correctly with the standard WordPress theme. Using a 3rd party theme that is not mobile responsive or has CSS idiosyncrasies can cause formatting issues on small screens.
 
 = What's the math behind the quality scorecard? =
-A post entitled Blog Post Quality Scorecard at Scromi.net explains this.
+See Blog Post Quality Scorecard at Scromi.net for the details.
 
 == Screenshots ==
 1. Scormi report in the WordPress admin.
@@ -65,7 +65,7 @@ A post entitled Blog Post Quality Scorecard at Scromi.net explains this.
 
 Version 3.1 - Release Date 25 Oct 2015
 
-* Replaced Avg. Page Load Time with blog post quality score
+* Replaces Avg. Page Load Time in the Top 10 pages list with our new blog post quality score, which measures the engagement strength of your posts.
 
 Version 3.0.1 - Release Date 5 Sep 2015
 
