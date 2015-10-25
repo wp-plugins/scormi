@@ -65,7 +65,7 @@ A post entitled Blog Post Quality Scorecard at Scromi.net explains this.
 
 Version 3.1 - Release Date 25 Oct 2015
 
-* Added ePower to report
+* Replaced Avg. Page Load Time with blog post quality score
 
 Version 3.0.1 - Release Date 5 Sep 2015
 
