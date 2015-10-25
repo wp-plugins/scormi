@@ -1,30 +1,30 @@
 === Plugin Name ===
 Plugin Name: Scormi - Google Analytics Insights
 Plugin URI: http://scormi.net
-Description: Mobile friendly Google Analytics insights.
-Tags: Google Analytics, Digital Marketing Analytics 
+Description: Scores your blog post engagement strength.
+Tags: Google Analytics, Digital Marketing Analytics, Scorecard
 Author: Aleksey Korenkov, Dave Goodwin
 Author URI: http://scormi.net
 Contributors: Alex, Dave
 Requires at least: 4.0
-Tested up to: 4.3
+Tested up to: 4.3.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Mobile friendly Google Analytics insights.
+Scores your blog post engagement strength.
 
 == Description ==
-Our goal with the plugin is to give you actionable information that can be used to make business decisions. Using the acquisition information below gives you a good picture of where visitors are coming from and how well your content is performing. Choose report date ranges for the past 7, 30, 60, or 90 days. Scormi works best for mature sites with over 100 visitors/day and at least 90 days of Google Analytics history. The report is mobile responsive so it works perfectly on a smartphone.
+Scormi uses your Google Analytics data and some math to calculate a blog post quality score. Knowing this can help you shape your content for better user engagement. On the mobile responsive report you'll instantly see which of your top 10 posts score at visitor engagement relative to the group. Scormi also reports Google Analytics metrics applicable to your site in general.
 
-The report can be viewed in the WP admin and one a publicly accessible WordPress page you create. You can optionally have the report auto-emailed to you daily.  
+Use a shortcode to view the report on a publicly accessible (protected) WordPress page or view it in the WP admin. 
 
 Report metrics include:
 
 * Sessions & corresponding last year sessions
 * Year over Year traffic growth % 
 * Return visits %
-* Top 10 pages with Sessions, Bounce Rate, and Avg. Page Load Speed
+* Top 10 pages with Sessions, Bounce Rate, Average Time on Page, Quality score.
 * Top 3 countries
 * Traffic source by Organic, Direct, Referral, Social
 * Top traffic sources by domain (who is driving traffic to your site)
@@ -42,23 +42,30 @@ To install and configure Scormi
 
 
 = How it Works =
-The plugin requests your Google Analytics information once per night. The request is sent to our server, which connects to GA via API, gathers the info, and returns it to the plugin. The plugin then renders the HTML report. The report is cached in WordPress between updates for quick loading.
+The plugin requests your Google Analytics information once per night. The request is sent to our server, which connects to GA via API, gathers the info, and returns it to the plugin. The plugin then renders the HTML report. The report is cached in WordPress between updates for quick loading. 
 
 == Frequently Asked Questions ==
+= For whom is this plugin intended ? =
+For WordPress blogs with at least 100 visitors per day and one year of data history.
+
 = Can Scormi see my Google credentials? =
 No. You sign into Google using their OAuth 2 secure login and Google Analytics gives you an access token for Scormi to use.
 
 = The report doesn’t look right on a smartphone. = 
 The report uses Bootstrap 3 and has been built to work correctly with the standard WordPress theme. Using a 3rd party theme that is not mobile responsive or has CSS idiosyncrasies can cause formatting issues on small screens.
 
-= Can I use the plugin if my site has fewer than 100 sessions/day and less than one year of GA history? =
-Yes but Google Analytics information with a small data set (100 per day being borderline) will result reporting gaps for some report items such as Page Load Time. This is due to GA’s use of data sampling for some metrics.
+= What's the math behind the quality scorecard? =
+A post entitled Blog Post Quality Scorecard at Scromi.net explains this.
 
 == Screenshots ==
-1. The Scormi report is fully responsive and looks great on mobile devices. This is a screenshot of the lower portion of the report on an iPhone 5.
-2. The report in the WordPress admin. The phone does not appear in the real admin of course.
- 
+1. Scormi report in the WordPress admin.
+2. The Scormi report is fully responsive for mobile devices. 
+
 == Changelog ==
+
+Version 3.1 - Release Date 25 Oct 2015
+
+* Added ePower to report
 
 Version 3.0.1 - Release Date 5 Sep 2015
 
