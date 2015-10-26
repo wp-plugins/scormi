@@ -15,7 +15,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Scores your blog post engagement strength.
 
 == Description ==
-Scormi uses your Google Analytics data and some math to calculate your blog post engagement strength. Knowing this can help you shape your content for better user engagement. Engagement strength is presented in a scorecard-like green, amber, red display. On the mobile responsive report you'll instantly see how well your top 10 posts score at visitor engagement relative to the group. Scormi also reports Google Analytics metrics applicable to your site in general.
+Scormi uses your Google Analytics data and some math to calculate a blog post engagement score. Knowing this can help you shape your content for better user engagement. Scores are computed for your top 10 posts by traffic and presented in a scorecard-like green, amber, red display for you to instantly see how well they are perfroming relative to the group. Scormi also reports Google Analytics metrics applicable to your site in general.
 
 Use a shortcode to view the report on a publicly accessible (protected) WordPress page or view it in the WP admin. 
 
@@ -42,7 +42,7 @@ To install and configure Scormi
 
 
 = How it Works =
-The plugin requests your Google Analytics information once per night. The request is sent to our server, which connects to GA via API, gathers the info, and returns it to the plugin. The plugin then renders the HTML report. The report is cached in WordPress between updates for quick loading. 
+After you authenticate with Google Analytics the plugin requests your information once per night. The request is sent to our server, which connects to GA via API, gathers the info, does the quality score calculations, renders an HTML report, and returns it to the plugin. The report is cached in WordPress between updates for quick loading. 
 
 == Frequently Asked Questions ==
 = For whom is this plugin intended ? =
@@ -65,7 +65,8 @@ See Blog Post Quality Scorecard at Scromi.net for the details.
 
 Version 3.1 - Release Date 25 Oct 2015
 
-* Replaces Avg. Page Load Time in the Top 10 pages list with our new blog post quality score, which measures the engagement strength of your posts.
+* Introduced blog post engagement score
+* Removed Avg Page Load Time
 
 Version 3.0.1 - Release Date 5 Sep 2015
 
