@@ -15,7 +15,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Scores your blog post engagement strength.
 
 == Description ==
-Scormi uses your Google Analytics data and some math to calculate a blog post engagement score. Knowing this can help you shape your content for better user engagement. Scores are computed for your top 10 posts by traffic and presented in a scorecard-like green, amber, red display for you to instantly see how well they are perfroming relative to the group. Scormi also reports Google Analytics metrics applicable to your site in general.
+Scormi displays key Google Analytics data and calculates a quality score for your top 10 blog posts (see screen shot). Knowing this can help you shape your content for better user engagement. Scormi works best for sites with more than 100 visitors/day spread over your posts. It won't be useful for sites with minimal traffic or sites where traffic goes to less than 10 pages because there isn't enough data to work with.
 
 Use a shortcode to view the report on a publicly accessible (protected) WordPress page or view it in the WP admin. 
 
@@ -46,7 +46,7 @@ After you authenticate with Google Analytics the plugin requests your informatio
 
 == Frequently Asked Questions ==
 = For whom is this plugin intended ? =
-For WordPress blogs with at least 100 visitors per day and one year of data history.
+For WordPress blogs with at least 100 visitors per day and one year of Google Analytics data history.
 
 = Can Scormi see my Google credentials? =
 No. You sign into Google using their OAuth 2 secure login and Google Analytics gives you an access token for Scormi to use.
@@ -55,7 +55,7 @@ No. You sign into Google using their OAuth 2 secure login and Google Analytics g
 The report uses Bootstrap 3 and has been built to work correctly with the standard WordPress theme. Using a 3rd party theme that is not mobile responsive or has CSS idiosyncrasies can cause formatting issues on small screens.
 
 = What's the math behind the quality scorecard? =
-See Blog Post Quality Scorecard at Scromi.net for the details.
+Basically it bell curves your posts. See the Blog Post Quality Scorecard post at Scromi.net for the details.
 
 == Screenshots ==
 1. Scormi report in the WordPress admin.
